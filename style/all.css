@@ -1,0 +1,435 @@
+/* 引入外部資源 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* 顏色 */
+:root {
+    --primary-100: #F5FEE7;
+    --primary-200: #e8fec5;
+    --primary-300: #C0FA73;
+    --primary-400: #57a203;
+    --primary-500: #477a11;
+    --neutral-0: #ffffff;
+    --neutral-100: #f8f9fa;
+    --neutral-300: #dee2e6;
+    --neutral-300: #DEE2E6;
+    --neutral-400: #CED4DA;
+    --neutral-500: #ADB5BD;
+    --neutral-600: #6c757d;
+    --neutral-700: #495057;
+    --neutral-800: #343A40;
+    --neutral-900: #212529;
+    --danger-300: rgba(215, 79, 79, 1);
+}
+
+/* 標籤基本樣式 */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto san TC",sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    color: var(--neutral-900);
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: var(--primary-900);
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+}
+
+a:hover {
+    color: var(--primary-400);
+}
+
+/* 通用樣式 */
+.container {
+    width: 1296px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -12px;
+    margin-left: -12px;
+}
+
+.col-1 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100%/12);
+}
+
+.col-2 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100%/12*2);
+}
+
+.col-3 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100%/12*3);
+}
+
+.col-4 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100%/12*4);
+}
+
+.col-5 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100%/12*5);
+}
+
+.col-7 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100%/12*7);
+}
+
+.col-10 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100%/12*10);
+}
+
+.col-12 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100%/12*12);
+}
+
+.d-flex {
+    display: flex;
+}
+
+.jcsb {
+    justify-content: space-between;
+}
+
+.jcc {
+    justify-content: center;
+}
+
+.aic {
+    align-items: center;
+}
+
+.tac {
+    text-align: center;
+}
+
+.db {
+    display: block;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.gap-8 {
+    gap: 8px;
+}
+
+.h1 {
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.h2 {
+    font-size: 32px;;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.h3 {
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.h4 {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.h5 {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.h6 {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.text-md {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.text-sm {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.text-primary-400 {
+    color: var(--primary-400);
+}
+
+.text-neutral-0 {
+    color: var(--neutral-0);
+}
+
+.text-neutral-100 {
+    color: var(--neutral-100);
+}
+
+.text-neutral-300 {
+    color: var(--neutral-300);
+}
+
+.text-neutral-500 {
+    color: var(--neutral-500);
+}
+
+.text-neutral-600 {
+    color: var(--neutral-600);
+}
+
+.danger {
+    color: var(--danger-300);
+}
+
+.bg-primary-100 {
+    background-color: var(--primary-100);
+}
+
+.bg-primary-300 {
+    background-color: var(--primary-300);
+}
+
+.bg-nertral-100 {
+    background-color: var(--neutral-100);
+}
+
+.p-12 {
+    padding: 12px;
+}
+
+.pt-32 {
+    padding-top: 32px;
+}
+
+.py-8 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.py-12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.py-16 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.py-24 { 
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.py-32 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.py-48 {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.py-64 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+
+.px-15 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.pb-48 {
+    padding-bottom: 48px;
+}
+
+.pl-24 {
+    padding-left: 24px;
+}
+
+.mb-4 {
+    margin-bottom: 4px;
+}
+
+.mb-8 {
+    margin-bottom: 8px;
+}
+
+.mb-14 {
+    margin-bottom: 16px;
+}
+
+.mb-12 {
+    margin-bottom: 12px;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.mb-24 {
+    margin-bottom: 24px;
+}
+
+.mb-32 {
+    margin-bottom: 32px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mb-48 {
+    margin-bottom: 48px;
+}
+
+.mb-64 {
+    margin-bottom: 64px;
+}
+
+.mt-32 {
+    margin-top: 32px;
+}
+
+.mr-8 {
+    margin-right: 8px;
+} 
+
+.mr-12 {
+    margin-right: 12px;
+}
+
+.mr-24 {
+    margin-right: 24px;
+}
+
+.mr-40 {
+    margin-right: 40px;
+}
+
+.mr-48 {
+    margin-right: 48px;
+}
+
+/* 元件 */
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "/";
+    padding: 0 12px;
+    color: var(--neutral-300);
+    font-weight: 700;
+}
+
+.breadcrumb-item {
+    display: flex;
+    font-weight: 500;
+}
+
+.breadcrumb-link {
+    color: var(--neutral-600);
+}
+
+.btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 12px 24px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-bk {
+    background-color: var(--neutral-900);
+    color: var(--neutral-0);
+}

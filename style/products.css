@@ -1,0 +1,36 @@
+.type .active {
+    color: var(--primary-400);
+}
+
+.page-item .btn{
+    padding: 8px 15px;
+    border-radius: 0;
+    font-weight: 400;
+
+}
+
+.page-item .active {
+    background-color: var(--primary-300);
+    font-weight: 500;
+}
+
+/* 馬上註冊 */
+.discount {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    background-color: var(--primary-200);
+}
+
+footer {
+    padding-top: 139px;
+    padding-bottom: 139px;
+    background-color: var(--neutral-100);
+}
+
+ul {
+    padding: 0;
+}
+
+.border-top {
+    border-top: 1px solid var(--neutral-300);
+}
