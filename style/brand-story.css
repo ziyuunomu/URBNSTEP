@@ -1,0 +1,232 @@
+/* 引入外部資源 */
+@import url('https://fonts.googleapis.com/css2?family=Micro+5&family=Noto+Sans+TC:wght@100..900&family=Pixelify+Sans:wght@400..700&display=swap');
+
+/* 顏色 */
+:root {
+    --primary-400: #57a203;
+    --primary-100: #F5FEE7;
+    --neutral-0: #ffffff;
+    --neutral-100: #f8f9fa;
+    --neutral-300: #dee2e6;
+    --neutral-600: #6c757d;
+    --neutral-900: #212529;
+}
+
+/* 標籤基本樣式 */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto san TC",sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    color: var(--neutral-900);
+}
+
+img {
+    vertical-align: middle;
+}
+
+a {
+    color: var(--primary-400);
+    text-underline-offset: 4px;
+    display: block;
+}
+
+/* 通用樣式 */
+.h1 {
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.h2 {
+    font-size: 32px;;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.h3 {
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.h4 {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.h5 {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.text-md {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.text-sm {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.text-primary-400 {
+    color: var(--primary-400);
+}
+
+.text-neutral-0 {
+    color: var(--neutral-0);
+}
+
+.text-neutral-100 {
+    color: var(--neutral-100);
+}
+
+.text-neutral-300 {
+    color: var(--neutral-300);
+}
+
+.text-neutral-600 {
+    color: var(--neutral-600);
+}
+
+.text-neutral-600 {
+    color: var(--neutral-600);
+}
+
+.bg-primary-100 {
+    background-color: var(--primary-100);
+}
+
+.bg-nertral-100 {
+    background-color: var(--neutral-100);
+}
+
+.pd-32 {
+    padding: 32px;
+}
+
+.py-32 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.py-64 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.py-8 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.pb-48 {
+    padding-bottom: 48px;
+}
+
+.pl-24 {
+    padding-left: 24px;
+}
+
+.mb-64 {
+    margin-bottom: 64px;
+}
+
+.mt-32 {
+    margin-top: 32px;
+}
+
+.mb-32 {
+    margin-bottom: 32px;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.mb-12 {
+    margin-bottom: 12px;
+}
+
+.mb-4 {
+    margin-bottom: 4px;
+}
+
+.mb-48 {
+    margin-bottom: 48px;
+}
+
+.mb-24 {
+    margin-bottom: 24px;
+}
+
+.mb-14 {
+    margin-bottom: 16px;
+}
+
+.header {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week1/hero.png?raw=true);
+    text-align: center;
+    padding-top: 151px;
+    padding-bottom: 151px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+}
+
+.container {
+    width: 856px;
+    margin: 0 auto;
+    margin-bottom: 64px;
+}
+
+.section-slogan {
+    text-align: center;
+    border-radius: 16px;
+}
+
+.section-intro img {
+    width: 1076px;
+    margin-left: -110px;
+    margin-right: -110px;
+}
+
+.section-lined {
+    border-bottom: 1px solid var(--neutral-300);
+}
+
+.history-line {
+    border-left: 1px solid var(--neutral-900);
+    padding-left: 8px;
+    margin-left: 8px;
+}
+
+.list-type {
+    list-style-type: disc;
+
+}
+
+.concept-line {
+    border-left: 3px solid var(--neutral-300);
+    padding-left: 12px;
+}
+
+.bi {
+    padding-right: 8px;
+    vertical-align: bottom;
+}
+
+.footer {
+    text-align: center;
+}
