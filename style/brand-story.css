@@ -63,3 +63,24 @@
 .section-story a:hover {
     background-color: var(--primary-200);
 }
+
+/* 馬上註冊 */
+.discount {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    background-color: var(--primary-200);
+}
+
+footer {
+    padding-top: 139px;
+    padding-bottom: 139px;
+    background-color: var(--neutral-100);
+}
+
+ul {
+    padding: 0;
+}
+
+.border-top {
+    border-top: 1px solid var(--neutral-300);
+}
