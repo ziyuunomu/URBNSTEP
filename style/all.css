@@ -75,7 +75,7 @@ table {
 }
 
 body {
-    font-family: "Noto san TC",sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.05em;
@@ -432,4 +432,13 @@ a:hover {
 .btn-bk {
     background-color: var(--neutral-900);
     color: var(--neutral-0);
+}
+
+.btn-bk:hover {
+    animation: oxxo-a 0.2s infinite alternate;
+}
+
+@keyframes oxxo-a {
+    0% {scale: 1;}
+    100% {scale: 1.1;}
 }

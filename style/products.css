@@ -14,6 +14,11 @@
     font-weight: 500;
 }
 
+.page-item  .btn:hover {
+    background-color: var(--primary-300);
+    font-weight: 500;
+}
+
 /* 馬上註冊 */
 .discount {
     padding-top: 48px;

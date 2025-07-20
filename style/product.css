@@ -22,7 +22,8 @@
 }
 
 /* 產品尺寸 */
-.btn-product-size {
+.btn-product-size,
+.btn-product-size-disabled {
     width: 160px;
     border: 1px solid var(--neutral-300);
 }
